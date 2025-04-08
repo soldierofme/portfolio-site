@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>金子陽子｜ポートフォリオ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>金子陽子｜Webデザイナー</h1>
+    <p>アート×テクノロジーで心を動かすデザインを</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Webデザイナー／動画クリエイター。WordPressサイト制作、SNS運用、SEO改善など幅広く対応可能。映画制作やアプリ開発経験もあり、感性と技術のバランスを活かしたデザインを心がけています。</p>
+    <ul>
+      <li>経歴：株式会社ビスタクルーズ、映像制作会社など</li>
+      <li>スキル：HTML/CSS, JavaScript, WordPress, Adobe系, SEO対策</li>
+    </ul>
+  </section>
+
+  <section id="works">
+    <h2>Works</h2>
+    <div class="work-gallery">
+      <div class="work-item" onclick="openModal('modal1')">
+        <img src="images/work1.jpg" alt="更年期サポートアプリ">
+        <p><strong>更年期サポートアプリ</strong></p>
+        <a href="https://example.com" target="_blank">→ View Project</a>
+      </div>
+      <div class="work-item" onclick="openModal('modal2')">
+        <img src="images/work2.jpg" alt="イベントポスター">
+        <p><strong>イベントチラシ・ポスター</strong></p>
+        <a href="https://example.com" target="_blank">→ View Project</a>
+      </div>
+      <div class="work-item" onclick="openModal('modal3')">
+        <img src="images/work3.jpg" alt="動画制作">
+        <p><strong>YouTube動画制作</strong></p>
+        <a href="https://youtube.com/example" target="_blank">→ View Video</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Webデザイン（HTML/CSS, JavaScript, WordPress）</li>
+      <li>グラフィックデザイン（Illustrator, Photoshop）</li>
+      <li>動画編集（Premiere Pro, After Effects）</li>
+      <li>SEO対策・Googleアナリティクス活用</li>
+      <li>SNS運用（Instagram/Facebook/YouTube）</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/xpwpobya" method="POST">
+      <input type="text" name="name" placeholder="お名前" required>
+      <input type="email" name="email" placeholder="メールアドレス" required>
+      <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 金子陽子. All rights reserved.
+  </footer>
+
+  <!-- モーダル -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+      <h3>更年期サポートアプリ</h3>
+      <p>UI/UX設計、助成金採択実績あり。</p>
+    </div>
+  </div>
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+      <h3>イベントチラシ・ポスター</h3>
+      <p>EXPO出展用デザイン一式。</p>
+    </div>
+  </div>
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+      <h3>YouTube動画制作</h3>
+      <p>撮影〜編集〜公開までを一貫して担当。</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
